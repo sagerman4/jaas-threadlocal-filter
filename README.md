@@ -2,13 +2,13 @@
 
 A Java servlet filter that grabs the JAAS principal and puts it on a ThreadLocal variable.
 
-##Huh?
+##Why
 
 So, you know how you're writing a Java app and you are floating around in some server-side Java and all of a sudden you think, "Damn.  I need the username! Where the hell am I going to get that? This is just a POJO! I'm going to have to make it an EJB or Spring component or wire in some kind of security context...ugh."
 
 ##No, you don't.
 
-Just use this thing.  It puts it in a class instance local to the thread that you can access whenever you want, wherever you want.
+Just use this thing.  It grabs the user ID from JAAS and uses it to create a class instance local to the thread that you can access whenever you want, wherever you want.
 
 ##Filter Configuration
 

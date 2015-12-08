@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author pettymt
+ * @author J. Sager Davidson
  */
 public class JaasLoginFilter implements Filter
 {

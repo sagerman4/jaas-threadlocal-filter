@@ -1,4 +1,4 @@
-package wayne.manor.auth;
+package sharkmeat.auth;
 
 /**
  * This thing should have auth stuff related to the current thread. That's about

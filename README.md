@@ -1,13 +1,36 @@
 # jaas-threadlocal-filter
 
-So, I found myself saying, Sager, wouldn't it be nice if you could just grab the JAAS principal from some magical, floating object throughout your webapp without having to access request-level information from random pojos?
+A Java servlet filter that grabs the JAAS principal and puts it on a ThreadLocal variable.
 
-Why, yes; yes that would be nice, Sager.
+##Huh?
 
-So, I wrote something to do just that.
+So, you know how you're writing a Java app and you are floating around in some server-side Java and all of a sudden you think, "Damn.  I need the username! Where the hell am I going to get that? This is just a POJO! I'm going to have to make it an EJB or Spring component or wire in some kind of security context...ugh."
 
-This is a servlet filter that just grabs the JAAS principal off of the incoming request and adds it to a ThreadLocal variable so you can grab her whenever you want.
+##No, you don't.
 
-Simple as that.
+Just use this thing.  It puts it in a class instance local to the thread that you can access whenever you want, wherever you want.
 
-I'll update this readme with usage when I've actually built the damn thing.
+##Filter Configuration
+
+In your web.xml:
+
+'''
+<filter>
+  <filter-name>JaasThreadlocalFilter</filter-name>
+  <filter-class>wayne.manor.auth.JaasLoginFilter</filter-class>
+</filter>
+<filter>
+  <filter-name>JaasThreadlocalFilter</filter-name>
+  <url-pattern>*</url-pattern>
+</filter>
+'''
+
+This is the basic configuration for any simple filter, but you can use filters all sorts of different ways.  I'm not going to document that stuff, though.  It's boring.
+
+##Usage
+
+'''
+final String userId = AuthContext.getAuthState().getUserId();
+'''
+
+Done.  Win.  Champions.

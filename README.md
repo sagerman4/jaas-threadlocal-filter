@@ -14,7 +14,7 @@ Just use this thing.  It grabs the user ID from JAAS and uses it to create a cla
 
 In your web.xml:
 
-'''
+```
 <filter>
   <filter-name>JaasThreadlocalFilter</filter-name>
   <filter-class>wayne.manor.auth.JaasLoginFilter</filter-class>
@@ -23,14 +23,14 @@ In your web.xml:
   <filter-name>JaasThreadlocalFilter</filter-name>
   <url-pattern>*</url-pattern>
 </filter>
-'''
+```
 
 This is the basic configuration for any simple filter, but you can use filters all sorts of different ways.  I'm not going to document that stuff, though.  It's boring.
 
 ##Usage
 
-'''
+```
 final String userId = AuthContext.getAuthState().getUserId();
-'''
+```
 
 Done.  Win.  Champions.

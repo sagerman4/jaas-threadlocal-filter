@@ -1,4 +1,4 @@
-package wayne.manor.auth;
+package sharkmeat.auth;
 
 import java.io.IOException;
 import javax.servlet.Filter;

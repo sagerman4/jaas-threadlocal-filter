@@ -17,7 +17,7 @@ In your web.xml:
 ```
 <filter>
   <filter-name>JaasThreadlocalFilter</filter-name>
-  <filter-class>wayne.manor.auth.JaasLoginFilter</filter-class>
+  <filter-class>sharkmeat.auth.JaasLoginFilter</filter-class>
 </filter>
 <filter>
   <filter-name>JaasThreadlocalFilter</filter-name>

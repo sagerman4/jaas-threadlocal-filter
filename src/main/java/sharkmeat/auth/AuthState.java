@@ -1,4 +1,4 @@
-package wayne.manor.auth;
+package sharkmeat.auth;
 
 /**
  * This thing is just a model class to house some information about the current

@@ -1,4 +1,4 @@
-package sharkmeat.auth;
+package com.github.sagerman4.auth;
 
 /**
  * This thing is just a model class to house some information about the current

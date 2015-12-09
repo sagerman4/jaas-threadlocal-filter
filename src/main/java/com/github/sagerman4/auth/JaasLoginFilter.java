@@ -1,4 +1,4 @@
-package sharkmeat.auth;
+package com.github.sagerman4.auth;
 
 import java.io.IOException;
 import javax.servlet.Filter;

@@ -1,4 +1,4 @@
-package sharkmeat.auth;
+package com.github.sagerman4.auth;
 
 /**
  * This thing should have auth stuff related to the current thread. That's about

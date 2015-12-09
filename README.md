@@ -42,7 +42,7 @@ If you are using Maven, just add this in your pom.xml:
 If you are using Gradle, then add this little line to your build.gradle dependencies:
 
 ```
-compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
+compile group: 'com.github.sagerman4', name: 'jaas-threadlocal-filter', version: '1.0'
 ```
 
 ##Usage

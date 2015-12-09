@@ -27,6 +27,24 @@ In your web.xml:
 
 This is the basic configuration for any simple filter, but you can use filters all sorts of different ways.  I'm not going to document that stuff, though.  It's boring.
 
+##Dependency Setup
+
+If you are using Maven, just add this in your pom.xml:
+
+```
+<dependency>
+  <groupId>com.github.sagerman4</groupId>
+  <artifactId>jaas-threadlocal-filter</artifactId>
+  <version>1.0</version>
+</dependency>
+```
+
+If you are using Gradle, then add this little line to your build.gradle dependencies:
+
+```
+compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
+```
+
 ##Usage
 
 ```
